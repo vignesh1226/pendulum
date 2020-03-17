@@ -12,7 +12,7 @@ function setup() {
 
   pivot = new Pivot(200,100,200,20);
 
-  bob = new Bob(220,140,80);
+  bob = new Bob(200,200,80);
   
   string = new String(bob.body,pivot.body);
 }
@@ -35,6 +35,7 @@ function draw() {
 
   else if (keyCode === SHIFT){
     bob.body.position.x = 200;
+    bob.body.position.y = 200;
   }
 
   textSize(18);
