@@ -1,13 +1,14 @@
 class String{
+	//constructing the body
 	constructor(bodyA,bodyB){
-
+		//giving options to the body
 		var options={
 		   bodyA:bodyA,
 		   bodyB:bodyB,
 		   stiffness:0.05,
 		   length:150
-        }
-        
+        	}
+		//
 		this.string = Constraint.create(options);
 		World.add(world,this.string);
 
